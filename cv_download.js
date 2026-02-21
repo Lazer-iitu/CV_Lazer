@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function(){
     if(cvLink){
       if(lang === "ru"){
         cvLink.href = "cv/CV_Yerkiman_Lazer_Junior_Data_Analyst.pdf";
-        cvLink.innerHTML = "📄 Скачать резюме";
+        cvLink.innerHTML = "Скачать резюме";
       } else {
         cvLink.href = "cv/CV_Yerkiman_Lazer_Junior_Data_Analyst.pdf";
-        cvLink.innerHTML = "📄 Download CV";
+        cvLink.innerHTML = "Download CV";
       }
     }
 

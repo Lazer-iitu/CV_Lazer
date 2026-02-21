@@ -60,32 +60,19 @@ body{
   transition:transform 0.5s ease;
 }
 
-/* PROJECT IMAGE CONTROL */
+
+/* FIX MOBILE & DESKTOP SLIDER HEIGHT */
 .slider{
-  position: relative;
-  width:100%;
+  position:relative;
   overflow:hidden;
-  max-height:420px;
 }
 
 .slides img{
   width:100%;
-  height:350px;
+  height:auto;
+  display:block;
   object-fit:contain;
 }
-
-@media(max-width:768px){
-
-  .slides img{
-    height:220px;
-  }
-
-  .project-media .slider{
-    max-height:260px;
-  }
-
-}
-
 /* ARROW BUTTONS */
 .slider-btn{
   position:absolute;
@@ -200,11 +187,12 @@ body{
   align-items:center;
   gap:40px;
   margin-bottom:35px;
-  padding:20px;
-  border-radius:14px;
-  background:white;
-  box-shadow:0 5px 15px rgba(0,0,0,0.04);
   transition:0.3s ease;
+  padding:10px 0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  border-bottom:1px solid #e5e7eb;
 }
 
 .certificate-item:hover{
@@ -316,11 +304,8 @@ body{
   transition:0.3s ease;
 }
 .project-block{
-  display:grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap:40px;
-  align-items:center;
-  margin-bottom:60px;
+  padding:0;
+  margin-bottom:40px;
 }
 
 .project-text h3{
@@ -339,7 +324,6 @@ body{
 }
 
 .project-media .slider{
-  max-height:360px;
   background:#f3f4f6;
   padding:15px;
   border-radius:16px;
@@ -350,10 +334,11 @@ body{
   object-fit:contain;
 }
 .project-block{
-  background:white;
-  padding:30px;
-  border-radius:16px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.05);
+  padding:30px 0;
+  border-bottom:1px solid #e5e7eb;
+  background:transparent;
+  box-shadow:none;
+  border-radius:0;
 }
 .slider {
   position: relative;
@@ -444,6 +429,188 @@ a:hover{text-decoration:underline;}
   .lang-toggle button{
     padding:5px 10px;
     font-size:12px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .entry{
+    grid-template-columns:1fr;
+    gap:12px;
+    padding-bottom:20px;
+    border-bottom:1px solid #e5e7eb;
+    margin-bottom:25px;
+  }
+
+  .entry-date{
+    display:inline-block;
+    background:#e0e7ff;
+    color:#3730a3;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:500;
+    width:fit-content;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .entry-content{
+    background:#f9fafb;
+    padding:15px;
+    border-radius:12px;
+  }
+
+}@media(max-width:768px){
+
+  .entry-content strong{
+    font-size:17px;
+  }
+
+  .entry-content em{
+    margin-bottom:8px;
+  }
+
+}
+@media(max-width:768px){
+
+  .entry{
+    grid-template-columns:1fr;
+    gap:10px;
+    margin-bottom:30px;
+    padding-left:15px;
+    border-left:3px solid #3b82f6;
+  }
+
+  .entry-date{
+    background:#f3f4f6;
+    color:#6b7280;
+    font-size:13px;
+    padding:4px 10px;
+    border-radius:12px;
+  }
+
+}
+@media(max-width:768px){
+
+  .certificate-item{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+  }
+
+  .cert-img img{
+    width:100%;
+    max-width:100%;
+  }
+
+}
+@media(max-width:768px){
+
+  .project-media .slider{
+    background:transparent;
+    padding:0;
+  }
+
+}
+
+
+@media(max-width:768px){
+
+  .project-media .slider{
+    padding:10px;
+    max-height:none;
+  }
+
+  .slides img{
+    height:auto;
+    max-height:260px;
+  }
+
+  .project-media img{
+    max-height:260px;
+  }
+
+}
+.card {
+  background: white;
+}
+.project-block:last-child{
+  border-bottom:none;
+}
+.card{
+  background:white;
+  padding:35px 30px;
+}
+.project-block:hover{
+  transform:translateX(4px);
+  transition:0.25s ease;
+}
+@media(max-width:768px){
+
+  body{
+    font-size:14px;
+  }
+
+  /* Sidebar */
+  .sidebar h1{
+    font-size:20px;
+  }
+
+  .subtitle{
+    font-size:14px;
+  }
+
+  .location{
+    font-size:13px;
+  }
+
+  /* Section titles */
+  .card h2{
+    font-size:20px;
+  }
+
+  /* Project titles */
+  .project-text h3{
+    font-size:17px;
+  }
+
+  /* Work / Education titles */
+  .entry-content strong{
+    font-size:16px;
+  }
+
+  .entry-content{
+    font-size:14px;
+  }
+
+  /* Certificates */
+  .cert-info h3{
+    font-size:16px;
+  }
+
+  .cert-info p{
+    font-size:13px;
+  }
+
+  /* Tags */
+  .tag{
+    font-size:11px;
+    padding:3px 8px;
+  }
+
+  .skills span{
+    font-size:12px;
+    padding:5px 10px;
+  }
+
+  /* Buttons */
+  .btn-cv{
+    font-size:14px;
+    padding:10px;
   }
 
 }
