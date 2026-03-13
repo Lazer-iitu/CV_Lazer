@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
         cvLink.href = "cv/CV_Yerkiman_Lazer_Junior_Data_Analyst.pdf";
         cvLink.innerHTML = "Скачать резюме";
       } else {
-        cvLink.href = "cv/CV_Yerkiman_Lazer_Junior_Data_Analyst.pdf";
+        cvLink.href = "cv/CV_Yerkiman_Lazer_Junior_Data_Analyst_eng.pdf";
         cvLink.innerHTML = "Download CV";
       }
     }
